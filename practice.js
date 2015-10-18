@@ -3,7 +3,8 @@
 
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
-  //Code here
+var me = { name: "Kellie", age: 25 };
+alert(me.name);
 
 
 
@@ -15,17 +16,17 @@
 
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
-  //Code here
+//Code here
 
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
-  //Code here
+//Code here
 
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
-  //Code here
+//Code here
 
 
 
@@ -42,17 +43,17 @@ Set the value of that key to 'chapstick'.
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
-  //Code here
+//Code here
 
 //After you do the above, alert your entire backPack object.
 
-  //Code here
+//Code here
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
-  //Code here
+//Code here
 
 
 
@@ -64,11 +65,11 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+//Code Here
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
+//Code Here
 
 
 
@@ -80,11 +81,11 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+//Code Here
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
+//Code Here
 
 
 
@@ -96,11 +97,11 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+//Code Here
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
+//Code Here
 
 
 
@@ -111,21 +112,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 
 var user = {
-    name: 'Tyler McGinnis',
-    email: null,
-    pwHash: 'U+Ldlngx2BYQk',
-    birthday: undefined,
-    username: 'tylermcginnis33',
-    age: 0
+  name: 'Tyler McGinnis',
+  email: null,
+  pwHash: 'U+Ldlngx2BYQk',
+  birthday: undefined,
+  username: 'tylermcginnis33',
+  age: 0
 }
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+//Code Here
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
+//Code Here
 
 
 
@@ -136,15 +137,15 @@ that each value is truthy. If it's not truthy, remove it from the object. */
 
 
 var user = {
-        name: 'Tyler McGinnis',
-        age: 24,
-        pwHash: 'U+Ldlngx2BYQk',
-        email: 'tylermcginnis33@gmail.com',
-        birthday: '05/02/1990',
-        username: 'tylermcginnis33',
-        sayName: function(){
-            alert('Email is : ' + this.email);
-        }
+  name: 'Tyler McGinnis',
+  age: 24,
+  pwHash: 'U+Ldlngx2BYQk',
+  email: 'tylermcginnis33@gmail.com',
+  birthday: '05/02/1990',
+  username: 'tylermcginnis33',
+  sayName: function () {
+    alert('Email is : ' + this.email);
+  }
 };
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
