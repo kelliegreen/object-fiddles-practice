@@ -86,7 +86,7 @@ var me = {
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-for(var k in me) {
+for (var k in me) {
   alert(me[k]);
 };
 
@@ -109,7 +109,7 @@ var album = {
 
 //Now, loop through your album object alerting every song title individually.
 
-for(var k in album) {
+for (var k in album) {
   alert([k]);
 };
 
@@ -121,11 +121,21 @@ for(var k in album) {
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-//Code Here
+var states = {
+  utah: 10000,
+  oregon: 40000,
+  washington: 30000,
+  texas: 30001,
+  florida: 45000
+};
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-//Code Here
+for(var i in states) {
+  if(states[i] > 30000) {
+    alert([i]);
+  }
+};
 
 
 
