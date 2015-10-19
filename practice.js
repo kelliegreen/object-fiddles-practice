@@ -235,8 +235,30 @@ methodCollection.alertHello();
 
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
 
-  //Code Here
+function MakePerson(yourName, yourBirthday, yourSsn) {
+  this.name = yourName;
+  this.birthday = yourBirthday;
+  this.ssn = yourSsn;
+  returnObject: function l() {
+    return (this);
+  };
+}
 
+var kellieGreen = new MakePerson("Kellie Green", "10-06-1990", "999-99-9999");
+
+
+
+
+function MakePerson(yourName, yourBirthday, yourSsn) {
+  this.name = yourName;
+  this.birthday = yourBirthday;
+  this.ssn = yourSsn;
+  returnObject: function k() {
+    var personstr = JSON.stringify(this);
+    var personobj = JSON.parse(personstr);
+    return(personobj);
+  };
+}
 
 
 //NEXT PROBLEM
