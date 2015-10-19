@@ -79,7 +79,7 @@ var me = {
   age: 25,
   height: "5'4''",
   gender: "Female",
-  married: "Yes",
+  married: true,
   eyeColor: "Blue",
   hairColor: "Brown"
 };
@@ -235,31 +235,19 @@ methodCollection.alertHello();
 
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
 
-function MakePerson(yourName, yourBirthday, yourSsn) {
-  this.name = yourName;
-  this.birthday = yourBirthday;
-  this.ssn = yourSsn;
-  returnObject: function l() {
-    return (this);
+
+
+
+function MakePerson(name, birthday, ssn) {
+  var person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn,
   };
+  return(person);
 }
 
-var kellieGreen = new MakePerson("Kellie Green", "10-06-1990", "999-99-9999");
-
-
-
-
-function MakePerson(yourName, yourBirthday, yourSsn) {
-  this.name = yourName;
-  this.birthday = yourBirthday;
-  this.ssn = yourSsn;
-  returnObject: function k() {
-    var personstr = JSON.stringify(this);
-    var personobj = JSON.parse(personstr);
-    return(personobj);
-  };
-}
-
+var person = new MakePerson("Kellie Green", "10-06-1990", "999-99-9999");
 
 //NEXT PROBLEM
 
@@ -267,10 +255,20 @@ function MakePerson(yourName, yourBirthday, yourSsn) {
 
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
-  //Code Here
+
+
+
   
-  
-  
+function MakeCard(cardNumber, expDate) {
+  var creditcard = {
+    cardNumber: cardNumber,
+    expDate: expDate,
+  };
+  return(creditcard);
+}
+
+
+var creditcard = new MakeCard("9876-9876-6789-7897", "10/16");  
 //NEXT PROBLEM
 
 
@@ -280,6 +278,16 @@ function MakePerson(yourName, yourBirthday, yourSsn) {
    Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard.
 */
 
-  //Code Here
+function bindCard(person, card) {
+  var result = {};
+  for(var prop in person) {
+    result[prop] = person[prop];
+  }
+  for (var prop in creditcard) {
+    result[prop] = creditcard[prop];
+  }
+  return result;
+};
 
-
+var fullPerson = bindCard(person, creditcard);
+console.log(fullPerson);
