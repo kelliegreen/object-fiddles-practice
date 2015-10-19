@@ -74,12 +74,21 @@ console.log(backPack);
 
 //Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-//Code Here
+var me = {
+  name: "Kellie Green",
+  age: 25,
+  height: "5'4''",
+  gender: "Female",
+  married: "Yes",
+  eyeColor: "Blue",
+  hairColor: "Brown"
+};
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-//Code Here
-
+for(var k in me) {
+  alert(me[k]);
+};
 
 
 
@@ -90,13 +99,19 @@ console.log(backPack);
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-//Code Here
+var album = {
+  roundTableRiavl: "3:39",
+  takeFlight: "5:08",
+  shatterMe: "5:18",
+  crystalize: "5:00",
+  moonTrance: "5:11"
+};
 
 //Now, loop through your album object alerting every song title individually.
 
-//Code Here
-
-
+for(var k in album) {
+  alert([k]);
+};
 
 
 //NEXT PROBLEM
